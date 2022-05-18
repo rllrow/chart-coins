@@ -1,0 +1,56 @@
+
+.container{
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subChart__wrapper {
+  position: relative;
+  margin-bottom: 1rem;
+  z-index: 1;
+
+  .right, .left {
+    transition: background .22s ease-in-out;
+    background: #f5f9fb;
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    right: 0;
+  }
+
+ .arrow--left, .arrow--right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transition: background .22s ease-in-out;
+    background: #ddeaf3;
+    width: 6px;
+  }
+
+  .arrow--left {
+    right: 0;
+    cursor: w-resize;
+  }
+
+  .arrow--right {
+    left: 0;
+    cursor: e-resize;
+  }
+
+  .window {
+    position: absolute;
+    background: transparent;
+    top: 0;
+    bottom: 0;
+  }
+}
